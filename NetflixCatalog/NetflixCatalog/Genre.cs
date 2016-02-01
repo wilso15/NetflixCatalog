@@ -9,12 +9,12 @@ namespace NetflixCatalog
 {
     public class Genre : IEnumerable
     {
-        public List<Title> Titles = new List<Title>();
+        public List<string> Titles = new List<string>();
         public IEnumerator GetEnumerator()
         {
             yield return Titles;
         }
-        public void AddToGenreList(Title genreType)
+        public void AddToGenreList(string genreType)
         {
             Titles.Add(genreType);
         }
